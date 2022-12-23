@@ -15,7 +15,7 @@ import log4j_practice.BaseClass;
 
 public class FileUpload extends BaseClass{
 	//=========BySendKeys==============//
-	/*public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 		setup();
 		navigateURL("https://www.automationtestinginsider.com/2019/08/textarea-textarea-element-defines-multi.html");
 		//Actions act= new Actions(driver);
@@ -29,15 +29,19 @@ public class FileUpload extends BaseClass{
 //		Robot robo =new Robot();
     		ele.sendKeys("C:\\Users\\91789\\OneDrive\\Desktop\\books\\A Top stocks.txt");
 		Thread.sleep(3000);
+		//=======//explictwait//===========
+		driver.findElement(By.xpath("//*[@id=\"testWait123\"]")).click();
+	  explictwait("//*[@id='timeout_text']");
+	  System.out.println(driver.findElement(By.xpath("//*[@id='timeout_text']")).getText());
 		driver.close();
-	}*/
+	}
 	//=================ByRobot=======================//
-	public static void main(String[] args) throws Exception {
+	/*public static void main(String[] args) throws Exception {
 		setup();
-		navigateURL("https://www.automationtestinginsider.com/2019/08/textarea-textarea-element-defines-multi.html");
+		navigateURL("https://ps.uci.edu/~franklin/doc/file_upload.html");
 		Actions act= new Actions(driver);
 		Thread.sleep(3000);
-		WebElement ele=driver.findElement(By.xpath("//*[@id=\"fileupload1\"]"));
+		WebElement ele=driver.findElement(By.xpath("/html/body/form/input[1]"));
 	 JsScrolltoElement(ele);
 		
 	  Thread.sleep(3000);
@@ -45,6 +49,8 @@ public class FileUpload extends BaseClass{
 	 // ele.click();
 	  Thread.sleep(3000);
 	  uploadfile("C:\\Users\\91789\\OneDrive\\Desktop\\books\\A Top stocks.txt");
+	  Thread.sleep(3000);
+	  driver.findElement(By.xpath("/html/body/form/input[2]")).click();
 	  
 	}
 	public static void setclipboard(String file) {
@@ -62,7 +68,7 @@ public class FileUpload extends BaseClass{
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		
-	}
+	}*/
 		
 		
 		
