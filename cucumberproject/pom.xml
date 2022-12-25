@@ -36,13 +36,6 @@
       <version>1.0.6</version>
       <scope>provided</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
-    <dependency>
-      <groupId>net.masterthought</groupId>
-      <artifactId>cucumber-reporting</artifactId>
-      <version>5.7.4</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-core</artifactId>
